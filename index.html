@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        main: 'hsl(209, 100%, 55%)',
+                        hover: 'hsl(209, 100%, 45%)',
+                        primary: 'hsl(196, 5%, 33%)',
+                    },
+                    backgroundImage: {
+                        'header-bg': 'url(./img/header_bg.png)',
+                        'firewall': 'url(./img/firewall.png)',
+                        'data': 'url(./img/data-analysis.png)',
+                        'encryption': 'url(./img/encryption.png)',
+                        'protection': 'url(./img/protection.png)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="pt-[78px] pb-[59px]">
+        <div class="contain bg-header-bg bg-no-repeat bg-right-top">
+            <a href="#" class="text-main flex flex-row items-center gap-[10px] font-medium">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 0C17.2871 0 21.7579 2.18288 21.9091 4.79593C21.7579 7.40874 17.2871 9.59217 12 9.59217C6.71273 9.59217 2.24234 7.40922 2.09082 4.79593C2.24234 2.18288 6.71273 0 12 0Z"
+                        fill="#1890FF" />
+                    <path
+                        d="M21.9234 19.0687C21.9234 21.7417 17.3794 24 12 24C6.62062 24 2.07657 21.7417 2.07657 19.0687V16.7106C3.77549 18.7505 7.53293 20.1379 12 20.1379C16.4671 20.1379 20.2244 18.7501 21.9234 16.7106V19.0687Z"
+                        fill="#1890FF" />
+                    <path
+                        d="M21.9234 14.2326C21.9234 16.9055 17.3794 19.1639 12 19.1639C6.62062 19.1639 2.07657 16.9055 2.07657 14.2326V11.7765C3.77549 13.8159 7.53293 15.2029 12 15.2029C16.4671 15.2029 20.2244 13.815 21.9234 11.7765V14.2326Z"
+                        fill="#1890FF" />
+                    <path
+                        d="M21.9234 9.29744C21.9234 11.9705 17.3794 14.2287 12 14.2287C6.62062 14.2287 2.07657 11.9705 2.07657 9.29744V7.13936C3.77549 9.17927 7.53293 10.5657 12 10.5657C16.4671 10.5657 20.2244 9.17879 21.9234 7.13936V9.29744Z"
+                        fill="#1890FF" />
+                </svg>
+                ServerSharing
+            </a>
+            <div class="flex flex-col items-center gap-[25px] max-w-[440px] w-full pt-[84px]">
+                <h1 class="text-black font-bold text-[48px] leading-[58px]">Powerful and safe server hosting</h1>
+                <div class="flex flex-col items-start gap-[35px] pb-[75px]">
+                    <p class="text-[18px] text-primary">
+                        Our revolutionary Cloud solution is powerful, simple, and surprisingly affordable. Harnessing
+                        the web has never been easier
+                    </p>
+                    <a href="#"
+                        class="bg-main text-white text-[18px] font-medium py-[12px] px-[62px] rounded-[10px] transition duration-300 ease-in-out hover:bg-hover">Learn
+                        more</a>
+                </div>
+            </div>
+            <div class="h-[1px] bg-[#DFE1E4]"></div>
+        </div>
+    </header>
+    <main>
+        <div class="contain">
+            <div class="flex flex-col gap-[46px] items-center">
+                <div class="flex flex-col items-center gap-[25px]">
+                    <div class="flex flex-row items-center gap-[38px]">
+                        <div class="flex flex-row gap-[20px] items-center">
+                            <div
+                                class="bg-[#FFECC7] w-[90px] h-[90px] bg-firewall bg-no-repeat rounded-[10px] bg-center">
+
+                            </div>
+                            <div class="flex flex-col gap-[10px] max-w-[260px] w-full">
+                                <h2 class="text-[18px] font-bold">
+                                    Firewall
+                                </h2>
+                                <p class="text-[14px] text-primary">Our system monitors and controls incoming and
+                                    outgoing
+                                    network traffic</p>
+                            </div>
+                        </div>
+                        <a href="#" class="py-[12px] pl-[15px] pr-[12px] border-[1.5px] border-main rounded-[40px]">
+                            <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1948_10)">
+                                    <path
+                                        d="M6.33696 19.236L6.33686 19.236C5.98505 19.588 5.41489 19.5879 5.06346 19.2361L5.06329 19.236C4.71172 18.8844 4.71174 18.3141 5.06328 17.9626L4.70998 17.6093L5.06329 17.9626L12.6727 10.3534L13.0263 9.99986L12.6727 9.6463L5.06358 2.03747C5.06356 2.03744 5.06353 2.03742 5.06351 2.03739C4.71189 1.68555 4.71202 1.11533 5.06351 0.763836L5.06358 0.763765C5.41509 0.412118 5.98535 0.412015 6.33717 0.763836L6.33717 0.763839L14.9368 9.3633C14.9368 9.36333 14.9368 9.36336 14.9369 9.36339C15.1128 9.5394 15.2004 9.7687 15.2004 9.99981C15.2004 10.2311 15.1125 10.4607 14.9366 10.6366L6.33696 19.236Z"
+                                        fill="#1890FF" stroke="#1890FF" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1948_10">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-row items-center gap-[38px]">
+                        <div class="flex flex-row gap-[20px] items-center">
+                            <div class="bg-[#C7EBFF] w-[90px] h-[90px] bg-data bg-no-repeat rounded-[10px] bg-center">
+
+                            </div>
+                            <div class="flex flex-col gap-[10px] max-w-[260px] w-full">
+                                <h2 class="text-[18px] font-bold">
+                                    Data Analysis
+                                </h2>
+                                <p class="text-[14px] text-primary">Data mining, text analytics, business intelligence
+                                    and
+                                    data visualization</p>
+                            </div>
+                        </div>
+                        <a href="#" class="py-[12px] pl-[15px] pr-[12px] border-[1.5px] border-main rounded-[40px]">
+                            <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1948_10)">
+                                    <path
+                                        d="M6.33696 19.236L6.33686 19.236C5.98505 19.588 5.41489 19.5879 5.06346 19.2361L5.06329 19.236C4.71172 18.8844 4.71174 18.3141 5.06328 17.9626L4.70998 17.6093L5.06329 17.9626L12.6727 10.3534L13.0263 9.99986L12.6727 9.6463L5.06358 2.03747C5.06356 2.03744 5.06353 2.03742 5.06351 2.03739C4.71189 1.68555 4.71202 1.11533 5.06351 0.763836L5.06358 0.763765C5.41509 0.412118 5.98535 0.412015 6.33717 0.763836L6.33717 0.763839L14.9368 9.3633C14.9368 9.36333 14.9368 9.36336 14.9369 9.36339C15.1128 9.5394 15.2004 9.7687 15.2004 9.99981C15.2004 10.2311 15.1125 10.4607 14.9366 10.6366L6.33696 19.236Z"
+                                        fill="#1890FF" stroke="#1890FF" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1948_10">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-row items-center gap-[38px]">
+                        <div class="flex flex-row gap-[20px] items-center">
+                            <div
+                                class="bg-[#FFFDC7] w-[90px] h-[90px] bg-encryption bg-no-repeat rounded-[10px] bg-center">
+
+                            </div>
+                            <div class="flex flex-col gap-[10px] max-w-[260px] w-full">
+                                <h2 class="text-[18px] font-bold">
+                                    Encryption
+                                </h2>
+                                <p class="text-[14px] text-primary">Information is encoded and can only be accessed with
+                                    the
+                                    encryption key</p>
+                            </div>
+                        </div>
+                        <a href="#" class="py-[12px] pl-[15px] pr-[12px] border-[1.5px] border-main rounded-[40px]">
+                            <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1948_10)">
+                                    <path
+                                        d="M6.33696 19.236L6.33686 19.236C5.98505 19.588 5.41489 19.5879 5.06346 19.2361L5.06329 19.236C4.71172 18.8844 4.71174 18.3141 5.06328 17.9626L4.70998 17.6093L5.06329 17.9626L12.6727 10.3534L13.0263 9.99986L12.6727 9.6463L5.06358 2.03747C5.06356 2.03744 5.06353 2.03742 5.06351 2.03739C4.71189 1.68555 4.71202 1.11533 5.06351 0.763836L5.06358 0.763765C5.41509 0.412118 5.98535 0.412015 6.33717 0.763836L6.33717 0.763839L14.9368 9.3633C14.9368 9.36333 14.9368 9.36336 14.9369 9.36339C15.1128 9.5394 15.2004 9.7687 15.2004 9.99981C15.2004 10.2311 15.1125 10.4607 14.9366 10.6366L6.33696 19.236Z"
+                                        fill="#1890FF" stroke="#1890FF" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1948_10">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-row items-center gap-[38px]">
+                        <div class="flex flex-row gap-[20px] items-center">
+                            <div
+                                class="bg-[#C7FFE4] w-[90px] h-[90px] bg-protection bg-no-repeat rounded-[10px] bg-center">
+
+                            </div>
+                            <div class="flex flex-col gap-[10px] max-w-[260px] w-full">
+                                <h2 class="text-[18px] font-bold">
+                                    Protection
+                                </h2>
+                                <p class="text-[14px] text-primary">Safeguarding important information from corruption,
+                                    compromise or loss</p>
+                            </div>
+                        </div>
+                        <a href="#" class="py-[12px] pl-[15px] pr-[12px] border-[1.5px] border-main rounded-[40px]">
+                            <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1948_10)">
+                                    <path
+                                        d="M6.33696 19.236L6.33686 19.236C5.98505 19.588 5.41489 19.5879 5.06346 19.2361L5.06329 19.236C4.71172 18.8844 4.71174 18.3141 5.06328 17.9626L4.70998 17.6093L5.06329 17.9626L12.6727 10.3534L13.0263 9.99986L12.6727 9.6463L5.06358 2.03747C5.06356 2.03744 5.06353 2.03742 5.06351 2.03739C4.71189 1.68555 4.71202 1.11533 5.06351 0.763836L5.06358 0.763765C5.41509 0.412118 5.98535 0.412015 6.33717 0.763836L6.33717 0.763839L14.9368 9.3633C14.9368 9.36333 14.9368 9.36336 14.9369 9.36339C15.1128 9.5394 15.2004 9.7687 15.2004 9.99981C15.2004 10.2311 15.1125 10.4607 14.9366 10.6366L6.33696 19.236Z"
+                                        fill="#1890FF" stroke="#1890FF" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1948_10">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <a href="#"
+                    class="bg-main py-4 px-[28px] text-white text-[18px] font-medium rounded-[10px] transition duration-300 ease-in-out hover:bg-hover">Explore
+                    more about ServerSharing</a>
+            </div>
+        </div>
+    </main>
+    <footer class="pt-[61px] pb-[88px]">
+        <div class="contain">
+            <div class="h-[1px] bg-[#DFE1E4]"></div>
+            <div class="flex flex-col items-center gap-[35px] pt-[45px]">
+                <p class="text-[14px] text-[#B1BCC0] text-center max-w-[430px]">If you prefer not to receive emails like
+                    this, you may
+                    unsubscribe
+                    (c) 2019 ServerSharing. All rights reserved.</p>
+                <div class="flex flex-row gap-[32px] items-center">
+                    <a href="#">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.25 7.90625H12.9375V5.03125C12.9375 4.23775 13.5815 3.59375 14.375 3.59375H15.8125V0H12.9375C10.5556 0 8.625 1.93056 8.625 4.3125V7.90625H5.75V11.5H8.625V23H12.9375V11.5H15.8125L17.25 7.90625Z"
+                                fill="#B1BCC0" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23 4.36856C22.1447 4.74375 21.2333 4.99244 20.2831 5.11319C21.2606 4.52956 22.0067 3.61244 22.3574 2.507C21.4461 3.05037 20.4398 3.43419 19.3674 3.64838C18.5021 2.72694 17.2687 2.15625 15.9232 2.15625C13.3127 2.15625 11.2111 4.27513 11.2111 6.87269C11.2111 7.24644 11.2427 7.60581 11.3203 7.94794C7.40025 7.75675 3.93156 5.87794 1.60137 3.01588C1.19456 3.72169 0.955938 4.52956 0.955938 5.39925C0.955938 7.03225 1.79688 8.47981 3.05037 9.31787C2.29281 9.3035 1.54962 9.08356 0.92 8.73712C0.92 8.7515 0.92 8.77019 0.92 8.78887C0.92 11.0802 2.55444 12.9835 4.69775 13.4219C4.31394 13.5269 3.89562 13.5772 3.4615 13.5772C3.15963 13.5772 2.85487 13.5599 2.56881 13.4967C3.17975 15.364 4.91338 16.7368 6.97475 16.7814C5.3705 18.0363 3.33356 18.7924 1.12844 18.7924C0.74175 18.7924 0.370875 18.7752 0 18.7277C2.08869 20.0747 4.56406 20.8438 7.2335 20.8438C15.9102 20.8438 20.654 13.6562 20.654 7.42613C20.654 7.21769 20.6468 7.01644 20.6367 6.81663C21.5726 6.1525 22.3589 5.32306 23 4.36856Z"
+                                fill="#B1BCC0" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.8125 0H7.1875C3.21856 0 0 3.21856 0 7.1875V15.8125C0 19.7814 3.21856 23 7.1875 23H15.8125C19.7814 23 23 19.7814 23 15.8125V7.1875C23 3.21856 19.7814 0 15.8125 0ZM20.8438 15.8125C20.8438 18.5869 18.5869 20.8438 15.8125 20.8438H7.1875C4.41313 20.8438 2.15625 18.5869 2.15625 15.8125V7.1875C2.15625 4.41313 4.41313 2.15625 7.1875 2.15625H15.8125C18.5869 2.15625 20.8438 4.41313 20.8438 7.1875V15.8125Z"
+                                fill="#B1BCC0" />
+                            <path
+                                d="M11.5 5.75C8.32456 5.75 5.75 8.32456 5.75 11.5C5.75 14.6754 8.32456 17.25 11.5 17.25C14.6754 17.25 17.25 14.6754 17.25 11.5C17.25 8.32456 14.6754 5.75 11.5 5.75ZM11.5 15.0938C9.51912 15.0938 7.90625 13.4809 7.90625 11.5C7.90625 9.51769 9.51912 7.90625 11.5 7.90625C13.4809 7.90625 15.0938 9.51769 15.0938 11.5C15.0938 13.4809 13.4809 15.0938 11.5 15.0938Z"
+                                fill="#B1BCC0" />
+                            <path
+                                d="M17.6812 6.08486C18.1044 6.08486 18.4474 5.74183 18.4474 5.31867C18.4474 4.89552 18.1044 4.55249 17.6812 4.55249C17.2581 4.55249 16.915 4.89552 16.915 5.31867C16.915 5.74183 17.2581 6.08486 17.6812 6.08486Z"
+                                fill="#B1BCC0" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
